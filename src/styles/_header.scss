@@ -1,0 +1,59 @@
+@use "globals" as *;
+
+header {
+    background-color: $primary-primary02;
+    width: 100%;
+
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-family-menu;
+        font-size: $font-size-menu;
+        height: 160px;
+
+        .menu-item2 {
+            padding-right: 250px;
+
+            li {
+                list-style-type: none;
+            }
+
+            a:nth-child(1) {
+                padding-left: 0;
+            }
+
+            a {
+                padding-left: 100px;
+                text-decoration: none;
+                color: $secondary-secondary03;
+            }
+
+            @include respond-to("small") {
+                display: none;
+            }
+        }
+
+
+        .icono-lineas {
+            display: none;
+
+            li {
+                list-style-type: none;
+            }
+
+            @include respond-to("small") {
+                display: block;
+                cursor: pointer; // Con esto sale la manita del ratón para que parezca un enlace
+            }
+
+            &:hover {
+                .menu-item2 {
+                    display: block;
+                    
+                }
+                
+            }
+        }
+    }
+}
