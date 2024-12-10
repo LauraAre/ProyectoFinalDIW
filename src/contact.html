@@ -54,10 +54,13 @@
       </div>
       <div class="contacto">
         <div class="formulario-contacto">
-          <form>
-            <input type="text" name="nombre" placeholder="Nombre:">
-            <input type="email" name="email" placeholder="Email:">
-            <input type="text" name="mensaje" placeholder="Mensaje:">
+          <form action="" method="post">
+            <input type="text" name="nombre" placeholder="Nombre:" required>
+            <input type="email" name="email" placeholder="Email:" required>
+            <input type="textarea" name="mensaje" placeholder="Mensaje:" required>
+            <div class="boton-enviar">
+              <input type="submit" value="Enviar">
+            </div>
           </form>
         </div>
 
