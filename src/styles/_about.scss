@@ -1,1 +1,121 @@
 // Variables que tengan que ver con la página about.html
+@use "globals" as *;
+
+main {
+    .items-about {
+        font-family: $font-family-parrafo;
+        font-size: $font-size-parrafo;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .items-left {
+            width: 70%;
+
+            .am-1 {
+                background-color: $primary-primary02;
+                width: 50%;
+                border: 6px solid $secondary-secondary01;
+                border-radius: 30px;
+                position: relative;
+                height: 111px;
+                align-items: center;
+                display: flex;
+                margin-bottom: 50px;
+                p{
+                    color: $secondary-secondary03;
+                    padding-left: 40px;
+                }
+                .datospersonales{
+                    text-align: center;
+                    display: flex;
+                    margin-left: 100px;
+                    justify-content: space-between;
+                    position: absolute;
+                    width: 50%;
+                }
+                .azul{
+                    background-color: $secondary-secondary01;
+                    border-radius: 23px;
+                    width: 20%;
+                    height: 100%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 7px;
+                }
+            }
+
+            .am-2 {
+                background-color: $primary-primary02;
+                border: none;
+                border-radius: 30px;
+                padding: 20px 40px;
+
+                p {
+                    color: $secondary-secondary03;
+                }
+
+            }
+
+
+            .am-3 {
+                background-color: $primary-primary02;
+                width: 50%;
+                border: 6px solid $secondary-secondary01;
+                border-radius: 30px;
+                position: relative;
+                z-index: 0;
+                padding-bottom: 50px;
+                padding-top: 20px;
+
+                p {
+                    color: $secondary-secondary03;
+                    padding-left: 30px;
+                    width: 120px;
+                }
+
+                .graphic {
+                    position: absolute;
+                    z-index: 1;
+                    background-color: $primary-primary01;
+                    width: 50%;
+                    height: 10px;
+
+                }
+
+                .graphic-2 {
+                    position: absolute;
+                    z-index: 2;
+                    background-color: $secondary-secondary01;
+                    height: 10px;
+
+                }
+
+                .barra-1 {
+                    width: 41%;
+                }
+
+                .barra-2 {
+                    width: 36%;
+                }
+
+                .barra-3 {
+                    width: 39%;
+                }
+
+                .col {
+                    padding-top: 30px;
+                }
+
+            }
+        }
+
+
+        .img-right {
+            text-align: end;
+            width: 30%;
+        }
+    }
+}
