@@ -1,0 +1,70 @@
+@use "globals" as *;
+
+main{
+    .titulo-work{
+        padding-top: 50px;
+        width: 25%;
+        p{
+            font-family: $font-family-titulo;
+            font-size: $font-size-titulo;
+            color: $secondary-secondary02;
+            font-weight: $font-weight-titulo;
+        }
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card1{
+        background-color: $primary-primary02;
+        border-radius: 30px;
+        width: 435px;
+        text-align: center;
+        padding: 17px 0px;
+        height: 454px;
+        margin: 70px 0px;
+        img{
+            margin-bottom: 50px;
+        }
+        button{
+            color: $secondary-secondary02;
+            background-color: $secondary-secondary01;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 25px;
+            box-shadow: $shadow04 $shadow04 15px rgb(90, 90, 90);
+            font-family: $font-family-menu;
+            font-size: $font-size-menu;
+            &:hover{
+                background-color: $primary-primary01;
+            }
+        }
+    }
+
+    .card2{
+        background-color: $secondary-secondary01;
+        border-radius: 30px;
+        width: 435px;
+        text-align: center;
+        padding: 17px 0px;
+        height: 454px;
+        margin: 70px 0px;
+        img{
+            margin-bottom: 50px;
+        }
+        button{
+            color: $secondary-secondary02;
+            background-color: $primary-primary01;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 25px;
+            box-shadow: $shadow04 $shadow04 15px rgb(90, 90, 90);
+            font-family: $font-family-menu;
+            font-size: $font-size-menu;
+            &:hover{
+                background-color: $primary-primary02;
+                color: $secondary-secondary03;
+            }
+        }
+    }
+}
