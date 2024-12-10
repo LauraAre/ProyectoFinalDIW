@@ -17,7 +17,7 @@ main {
                 background-color: $primary-primary02;
                 width: 50%;
                 border: 6px solid $secondary-secondary01;
-                border-radius: 30px;
+                border-radius: $border-radius-general;
                 position: relative;
                 height: 111px;
                 align-items: center;
@@ -50,7 +50,7 @@ main {
             .am-2 {
                 background-color: $primary-primary02;
                 border: none;
-                border-radius: 30px;
+                border-radius: $border-radius-general;
                 padding: 20px 40px;
 
                 p {
@@ -64,7 +64,7 @@ main {
                 background-color: $primary-primary02;
                 width: 50%;
                 border: 6px solid $secondary-secondary01;
-                border-radius: 30px;
+                border-radius: $border-radius-general;
                 position: relative;
                 z-index: 0;
                 padding-bottom: 50px;

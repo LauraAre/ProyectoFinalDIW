@@ -17,7 +17,7 @@ main{
     }
     .card1{
         background-color: $primary-primary02;
-        border-radius: 30px;
+        border-radius: $border-radius-general;
         width: 435px;
         text-align: center;
         padding: 17px 0px;
@@ -43,7 +43,7 @@ main{
 
     .card2{
         background-color: $secondary-secondary01;
-        border-radius: 30px;
+        border-radius: $border-radius-general;
         width: 435px;
         text-align: center;
         padding: 17px 0px;

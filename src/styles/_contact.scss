@@ -1,1 +1,64 @@
 // Variables que se vayan a usar en la página contact.html
+@use "globals" as *;
+
+main {
+    .container {
+        .titulo-contacto {
+            font-family: $font-family-titulo;
+            font-size: $font-size-titulo;
+            font-weight: $font-weight-titulo;
+            padding: 50px 0px;
+        }
+
+        .contacto {
+            display: flex;
+            justify-content: space-between;
+            .formulario-contacto {
+                background-color: $primary-primary02;
+                width: 454px;
+                border-radius: $border-radius-general;
+                padding: 50px 50px;
+                justify-content: center;
+                margin-bottom: 80px;
+
+                form {
+                    input {
+                        border: 3px solid $secondary-secondary01;
+                        border-radius: 4px;
+                        padding-right: 180px;
+                        padding-left: 10px;
+                        padding-top: 5px;
+
+                        &:nth-child(1) {
+                            padding-bottom: 40px;
+                            margin-bottom: 50px;
+                        }
+
+                        &:nth-child(2) {
+                            padding-bottom: 40px;
+                            margin-bottom: 50px;
+                        }
+
+                        &:nth-child(3) {
+                            padding-bottom: 200px;
+                            margin-bottom: 0px;
+                        }
+
+                        &::placeholder {
+                            color: $secondary-secondary02;
+                            font-family: $font-family-parrafo;
+                            font-size: $font-size-parrafo;
+                        }
+                    }
+                }
+            }
+            .imagen-contacto{
+                img{
+                    width: 454px;
+                }
+            }
+        }
+
+    }
+
+}
