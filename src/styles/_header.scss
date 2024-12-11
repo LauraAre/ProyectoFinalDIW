@@ -12,8 +12,26 @@ header {
         font-size: $font-size-menu;
         height: 160px;
 
+        .menu-item1 {
+            img{
+                width: 233px;
+                @include respond-to("small") {
+                    width: 150px;
+                }
+            }
+            
+        }
+
         .menu-item2 {
             padding-right: 250px;
+
+            @include respond-to("medium-l") {
+                justify-content: center;
+                padding-right: 100px;
+            }
+            @include respond-to("small") {
+                padding-right: 0px;
+            }
 
             li {
                 list-style-type: none;
@@ -27,6 +45,13 @@ header {
                 padding-left: 100px;
                 text-decoration: none;
                 color: $secondary-secondary03;
+
+                @include respond-to("medium-l") {
+                    padding-left: 20px;
+                }
+                @include respond-to("small-medium") {
+                    padding-left: 0px;
+                }
             }
 
             @include respond-to("small") {
@@ -44,15 +69,15 @@ header {
 
             @include respond-to("small") {
                 display: block;
-                cursor: pointer; // Con esto sale la manita del ratón para que parezca un enlace
+                cursor: pointer; 
             }
 
             &:hover {
                 .menu-item2 {
                     display: block;
-                    
+
                 }
-                
+
             }
         }
     }
