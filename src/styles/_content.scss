@@ -73,7 +73,7 @@ main {
                     
                 }
                 @include respond-to("small") {
-                    width: 300px;
+                    width: 250px;
                 }
                 p {
                     padding: 0px 30px;
