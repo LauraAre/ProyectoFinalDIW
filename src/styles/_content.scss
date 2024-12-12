@@ -68,7 +68,13 @@ main {
                 align-items: flex-start;
                 padding: 20px;
                 transition: opacity 0.3s ease;
-
+                @include respond-to("medium") {
+                    width: 500px;
+                    
+                }
+                @include respond-to("small") {
+                    width: 300px;
+                }
                 p {
                     padding: 0px 30px;
                     font-size: 20px;
