@@ -9,13 +9,16 @@ main {
         justify-content: center;
         margin-top: 100px;
         margin-bottom: 100px;
+        flex-wrap: wrap;
 
         .items-left {
             width: 70%;
-
+            @include respond-to("medium-l") {
+                width: 500px;
+            }
             .am-1 {
                 background-color: $primary-primary02;
-                width: 50%;
+                width: 462px;
                 border: 6px solid $secondary-secondary01;
                 border-radius: $border-radius-general;
                 position: relative;
@@ -23,17 +26,26 @@ main {
                 align-items: center;
                 display: flex;
                 margin-bottom: 50px;
-                p{
-                    color: $secondary-secondary03;
-                    padding-left: 40px;
+                @include respond-to("small") {
+                    height: 250px;
+                    width: 300px;
+                    margin-left: 30px;
                 }
+                
                 .datospersonales{
                     text-align: center;
                     display: flex;
                     margin-left: 100px;
                     justify-content: space-between;
                     position: absolute;
-                    width: 50%;
+                    @include respond-to("small") {
+                        flex-direction: column;
+                    }
+                    p{
+                        color: $secondary-secondary03;
+                        padding-left: 40px;
+                        
+                    }
                 }
                 .azul{
                     background-color: $secondary-secondary01;
@@ -57,18 +69,27 @@ main {
                     color: $secondary-secondary03;
                 }
 
+                @include respond-to("small") {
+                    margin-left: 30px;
+                }
+
             }
 
 
             .am-3 {
                 background-color: $primary-primary02;
-                width: 50%;
+                width: 462px;
                 border: 6px solid $secondary-secondary01;
                 border-radius: $border-radius-general;
                 position: relative;
                 z-index: 0;
                 padding-bottom: 50px;
                 padding-top: 20px;
+
+                @include respond-to("small") {
+                    margin-left: 30px;
+                    width: 300px;
+                }
 
                 p {
                     color: $secondary-secondary03;
@@ -116,6 +137,10 @@ main {
         .img-right {
             text-align: end;
             width: 30%;
+            @include respond-to("medium-l") {
+                width: 500px;
+                padding-top: 60px;
+            }
         }
     }
 }
