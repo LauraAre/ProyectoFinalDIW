@@ -20,6 +20,5 @@ Además, he utilizado la librería GSAP para dar dinamismo a mi portfolio. Por e
 
 ## 3. Enlaces de interés
 
-- [Enlace a la página index.html desplegada en GitHub Pages](https://lauraare.github.io/FigmaProyecto/)
-- [Enlace a la página signup.html desplegada en GitHub Pages](https://lauraare.github.io/FigmaProyecto/signup.html)
-- [Enlace a mi diseño de Figma](https://www.figma.com/design/ZDwMb97vcApUEoOLD4AJM1/IndexHippie?node-id=2-4&t=jGlHrGRulASnYZt8-1)
+- [Enlace a la página index.html desplegada en GitHub Pages](https://lauraare.github.io/ProyectoFinalDIW/)
+- [Enlace a mi diseño de Figma](https://www.figma.com/design/ukrkxxDtaU4d33e3beGQpC/ProyectoFinal?node-id=0-1&t=DCNJT9SL8kCXUyVm-1)
