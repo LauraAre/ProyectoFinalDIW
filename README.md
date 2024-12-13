@@ -1,7 +1,7 @@
 # P3.2 - Práctica Integral: Portfolio Personal
 
-> S2DAW Diseño Web  
-> Autor: Laura Arellano Torrero
+> S2DAW Diseño de Interfaces Web  
+> Autora: Laura Arellano Torrero
 
 ## 1. Descripción General de mi proyecto
 
