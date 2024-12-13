@@ -14,6 +14,9 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include respond-to("medium") {
+                flex-direction: column;
+            }
             .formulario-contacto {
                 background-color: $primary-primary02;
                 width: 454px;
@@ -21,7 +24,14 @@ main {
                 padding: 50px 50px;
                 justify-content: center;
                 margin-bottom: 80px;
-
+                @include respond-to("medium") {
+                    width: 355px;
+                    padding: 30px 30px;
+                }
+                @include respond-to("small") {
+                    width: 250px;
+                    padding: 30px 30px;
+                }
                 form {
                     input {
                         border: 3px solid $secondary-secondary01;
@@ -29,7 +39,12 @@ main {
                         padding-right: 180px;
                         padding-left: 10px;
                         padding-top: 5px;
-
+                        @include respond-to("medium") {
+                            padding-right: 120px;
+                        }
+                        @include respond-to("small") {
+                            padding-right: 10px;
+                        }
                         &:nth-child(1) {
                             padding-bottom: 40px;
                             margin-bottom: 50px;
@@ -55,6 +70,7 @@ main {
                 }
                 .boton-enviar{
                     text-align: center;
+
                     input[type="submit"]{
                         margin-bottom: 0px;
                         color: $secondary-secondary02;
@@ -77,6 +93,10 @@ main {
             .imagen-contacto {
                 img {
                     width: 454px;
+                    @include respond-to("small") {
+                        width: 350px;
+                        padding-bottom: 50px;
+                    }
                 }
             }
         }
