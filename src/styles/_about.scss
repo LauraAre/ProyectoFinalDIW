@@ -97,13 +97,16 @@ main {
                     width: 120px;
                 }
 
+                .row-1,.row-2,.row-3{
+                    align-items: center;
+                }
+                
                 .graphic {
                     position: absolute;
                     z-index: 1;
                     background-color: $primary-primary01;
                     width: 50%;
                     height: 10px;
-
                 }
 
                 .graphic-2 {
@@ -111,8 +114,9 @@ main {
                     z-index: 2;
                     background-color: $secondary-secondary01;
                     height: 10px;
-
+                    
                 }
+                
 
                 .barra-1 {
                     width: 41%;
